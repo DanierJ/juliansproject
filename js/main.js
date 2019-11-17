@@ -1,9 +1,10 @@
 $('#exampleModalScrollable').on('show.bs.modal', function (e) {
-    console.log(e.relatedTarget.dataset.title);
 
     const modal = $(this);
 
     const card = getData(e.relatedTarget.dataset.title);
+
+    console.log(card)
 
     fillInfo(modal, card);
 
@@ -16,9 +17,9 @@ const getData = title => {
     let info = {};
 
     switch(title) {
-        case "Messi": 
-            info.title = "Messi";
-            info.body = "Messi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni a, aspernatur illo vel quos commodi quas vero blanditiis nulla expedita corporis, possimus sint similique id incidunt sequi, eius optio dolores recusandae. Reiciendis rem ab nihil officia reprehenderit inventore dolorum quisquam adipisci. Deleniti a optio odio placeat quod inventore alias iste esse autem earum omnis perferendis, eos eum quia culpa nihil nisi voluptatibus asperiores? Qui laudantium ex dicta inventore dolore, sint aut error! A, unde impedit error dolor ab ipsa, exercitationem, quidem at inventore minima eligendi facere iusto minus nemo porro totam consequuntur vitae. Impedit nobis hic aut aperiam error quam, quo voluptatum cumque placeat, repellat porro fuga nulla dolores provident quod similique nisi obcaecati. Quia, assumenda molestias. Deleniti vero ea labore repellat corporis distinctio sapiente esse delectus, molestias, et tempore? Minus quae omnis nihil debitis aspernatur cupiditate fugiat quidem, distinctio dolores quod fugit! Fugit eligendi eaque, accusamus itaque et quam dignissimos velit tempora maxime natus, ea excepturi quaerat ipsam! Voluptatum illo temporibus excepturi quis, eaque dolorem nemo consequuntur mollitia sunt nesciunt nihil. Natus eligendi temporibus quidem odio ex. Corporis dolor impedit facere id. Alias magnam corporis voluptatem sed laboriosam aperiam aliquid tenetur incidunt explicabo, tempora sint! Possimus nostrum sint optio!"
+        case "compresor-hermetico": 
+            info.title = "Compresor hermetico";
+            info.body = "Su motor eléctrico se encuentra acoplado directamente al compresor, y ambos dentro de una misma envolvente de acero que forman una unidad. Al ser herméticos no se puede realizar mantenimiento a su interior. Este a su alrededor tiene unos tubos que van soldados a su estructura envolvente, uno va dirigido a la zona de alta, el otro proviene de la zona de baja y el último tiene varias funciones como meter aceite y cargar refrigerante."
             break;
         case "Test":
             info.title = "TESTING";
